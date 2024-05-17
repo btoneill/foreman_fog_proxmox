@@ -50,7 +50,6 @@ module ProxmoxVmVolumesHelper
 
   def parse_hard_disk_volume(args)
     logger.debug(format(_('parse_hard_disk_volume(): args=%<args>s'), args: args))
-    logger.error(format(_('parse_hard_disk_volume(): args=%<args>s'), args: args))
     disk = {}
     disk[:id] = args['id'] if args.key?('id')
     disk[:volid] = args['volid'] if args.key?('volid')
